@@ -23,5 +23,6 @@ export async function getStaticProps() {
       props: {
         albums,
       },
+      revalidate: 5,
     }
   }
