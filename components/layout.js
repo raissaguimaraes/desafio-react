@@ -3,6 +3,7 @@ import Header from "./header";
 import Head from "next/head"
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Grid } from "@mui/material";
 
 const theme = createTheme();
 
@@ -19,7 +20,9 @@ function Layout({children}){
         <ThemeProvider theme={theme}>
             <CssBaseline />
                 <main>
+                <Grid sx={{ padding: "3rem", backgroundColor: "#F9F7F0"}}>
                     {children}
+                </Grid>
                 </main>
         </ThemeProvider>
         <Footer />

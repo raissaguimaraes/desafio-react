@@ -6,18 +6,18 @@ import Link from '@mui/material/Link';
 function Footer() {
 
   return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
+    <Box component="footer" sx={{ bgcolor: '#072A40', py: 6 }}>
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography variant="h6" align="center" color="#F9F7F0" gutterBottom>
           Criado por
         </Typography>
         <Typography
           variant="subtitle1"
           align="center"
-          color="text.secondary"
+          color="#F9F7F0"
           component="p"
         >
-        <Link color="inherit" href="https://github.com/raissaguimaraes/desafio-react">
+        <Link color="#F9F7F0" href="https://github.com/raissaguimaraes/desafio-react">
             By Raissa Guimarães
         </Link>
         </Typography>

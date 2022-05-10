@@ -1,15 +1,14 @@
-import Link from 'next/link'
+import MediaCard from '../../components/midiaCard';
+import { Grid, Typography } from '@mui/material';
 
 function Albums ({albums}) {
       return (
-        <div>
-          {albums.map((album) => (
-          <div key={album.id}>
-          <p>Nome: {album.title} </p>
-          <p>Created by: {album.userId}</p>
-          </div>
-          ))}
-        </div>
+        <Grid>
+            <Typography variant="h4" color="#18B7BE" gutterBottom component="div"> 
+             Albums
+            </Typography>
+           <MediaCard albums={albums}/>
+        </Grid>
       )
 }
 

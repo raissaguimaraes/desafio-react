@@ -1,14 +1,15 @@
+import TodoList from '../../components/todoList';
+import { Typography } from '@mui/material';
+
 function Todos ({todos}) {
+
     return(
-    <div>
-          {todos.map((todo) => (
-          <div key={todo.id}>
-          <p>Nome: {todo.title}</p>
-          <p>Created by: {todo.userId}</p>
-          <p>Status: {todo.completed}</p>
-          </div>
-          ))}
-    </div>
+      <>
+        <Typography variant="h4" color="#18B7BE" gutterBottom component="div"> 
+          TO-DO's
+        </Typography>
+        <TodoList todos={todos} />
+      </>
     )
 }
 

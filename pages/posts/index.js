@@ -1,14 +1,16 @@
+import FeaturedPost from "../../components/featuredPost";
+import { Typography, Grid } from "@mui/material";
+
 function Posts ({posts}) {
     return(
-    <div>
-          {posts.map((post) => (
-          <div key={post.id}>
-          <p>Nome: {post.title} </p>
-          <p>Created by: {post.userId}</p>
-          <p>Descrição: {post.body} </p>
-          </div>
-          ))}
-    </div>
+      <Grid>
+        <Typography variant="h4" color="#18B7BE" gutterBottom component="div"> 
+        Postagens
+        </Typography>
+        {posts.map((post) => (
+        <FeaturedPost post={post} />
+        ))}
+      </Grid>
     )
 }
 
