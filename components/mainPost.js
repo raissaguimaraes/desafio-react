@@ -2,7 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import Markdown from './Markdown';
+import Markdown from './markdown';
 
 function MainPost({post}) {
 
@@ -25,7 +25,7 @@ function MainPost({post}) {
         {post.title}
       </Typography>
       <Divider />
-        <Markdown className="markdown" key={post.id}>
+        <Markdown className="markdown" key="markdown">
          {post.body}
         </Markdown>
     </Grid>
